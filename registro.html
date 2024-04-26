@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/public/style.css" />
+    <title>La cocina de Juan</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="nav" href="index.html">Home</a>
+        <a class="nav" href="acerca-de.html">Acerca de</a>
+        <a class="nav" href="contacto.html">Contacto</a>
+        <a class="nav" href="registro.html">Regístrese</a>
+        <a class="nav" href="sucursales.html">Sucursales</a>
+        <a  class="nav" href="clientes.html">Nuestros Clientes</a>
+      </nav>
+
+      <h1>La cocina de Juan</h1>
+    </header>
+
+    <main>
+      <article>
+        <h2>Formulario de registro</h2>
+        <form class="formulario" action="show_data.html" method="POST">
+          <section>
+            <label for="Nombre">Nombre</label>
+            <input
+              type="text"
+              id="Nombre"
+              name="name"
+              placeholder="Ingrese su nombre..."
+            />
+
+            <label for="Apellido">Apellido</label>
+            <input
+              type="text"
+              id="Apellido"
+              name="lastname"
+              placeholder="Ingrese su apellido..."
+            />
+          </section>
+
+          <section>
+            <p>Dirección:</p>
+
+            <label for="Calle">Calle</label>
+            <input
+              type="text"
+              id="Calle"
+              name="address"
+              placeholder="Ingrese su calle..."
+            />
+
+            <label for="Numero">Numero</label>
+            <input
+              type="number"
+              id="Numero"
+              name="Numero"
+              placeholder="Ingrese el numero..."
+            />
+
+            <label for="Ciudad">Ciudad</label>
+            <input
+              type="text"
+              id="Ciudad"
+              name="city"
+              placeholder="Ingrese su ciudad..."
+            />
+
+            <label for="CodigoPostal">Codigo Postal</label>
+            <input
+              type="text"
+              id="CodigoPostal"
+              name="zipcode"
+              placeholder="Ingrese su C.P...."
+            />
+          </section>
+
+          <section>
+            <label for="Telefono">Teléfono: </label>
+            <input
+              type="tel"
+              id="Telefono"
+              name="phone"
+              placeholder="Ingrese su telefono"
+            />
+
+            <label for="FechaNacimiento">Fecha de nacimiento(mm/dd/yyyy)</label>
+            <input type="date" id="FechaNacimiento" name="dateofbirth" />
+
+            <label for="Mail">Mail</label>
+            <input
+              type="email"
+              id="Mail"
+              name="mail"
+              placeholder="Ingrese su mail"
+            />
+
+            <label for="Clave">Clave</label>
+            <input
+              type="password"
+              id="Clave"
+              name="clave"
+              placeholder="Ingrese su clave"
+            />
+          </section>
+
+          <section>
+            <label for="Genero">Genero</label>
+
+            <input type="radio" id="Hombre" value="hombre" name="genero" />
+            <label for="Hombre">Hombre</label>
+
+            <input type="radio" id="Mujer" value="mujer" name="genero" />
+            <label for="Mujer">Mujer</label>
+
+            <input type="radio" id="Otro" value="otro" name="genero" />
+            <label for="Otro">Otro</label>
+          </section>
+
+          <section>
+            <label for="Estudios">Estudios</label>
+
+            <input
+              type="checkbox"
+              id="Primarios"
+              name="Estudios"
+              value="Primarios"
+            />
+            <label for="Primarios">Primarios</label>
+
+            <input
+              type="checkbox"
+              id="Secunadarios"
+              name="Estudios"
+              value="Secunadarios"
+            />
+            <label for="Secunarios">Secunadarios</label>
+
+            <input
+              type="checkbox"
+              id="Terciarios"
+              name="Estudios"
+              value="Terciarios"
+            />
+            <label for="Terciarios">Terciarios</label>
+
+            <input
+              type="checkbox"
+              id="Universitarios"
+              name="Estudios"
+              value="Universitarios"
+            />
+            <label for="Universitarios">Universitarios</label>
+
+            <input type="checkbox" id="Otro" name="Estudios" value="Otro" />
+            <label for="Otro">Otro</label>
+          </section>
+
+          <input type="submit" value="Enviar Formulario" />
+          <p>
+            Si uested hace click en el boton "Enviar", la informción será
+            enviada a las página "show_data.html"
+          </p>
+        </form>
+      </article>
+    </main>
+
+    <footer>
+      <p>Derechos reservados @2020</p>
+    </footer>
+  </body>
+</html>

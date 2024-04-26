@@ -1,0 +1,23 @@
+@media (min-width: 1024px) {
+    img {
+        max-width: 30%;
+        height: auto;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 1024px) {
+    img {
+        max-width: 40%;
+        height: auto;
+        margin: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    img {
+        max-width: 90%;
+        height: auto;
+        margin: 15px;
+    }
+}
